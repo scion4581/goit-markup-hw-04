@@ -1,0 +1,455 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
+}
+
+p, h1, h2, h3, h4, h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+h2 {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+ }
+
+/* ================ HEADER SECTION ================ */
+
+
+
+.page-header {
+    background-color: #FFFFFF;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    /* border-bottom: 1px solid #e7e9fc; */
+}
+
+.page-header-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+}
+
+
+.logotype {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-right: 76px;
+}
+
+.header-logotype .accent-color {
+    color: #2E2F42;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-link {
+    color:#2E2F42;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0 24px;
+    position: relative;
+    transition: color 0.4s ease;
+}
+
+.menu-link:hover, .menu-link:focus {
+    color: #404BBF;
+}
+
+.menu-link::after, .menu-link::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #404BBF;
+    display: inline-block;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: opacity 0.4s ease;
+    opacity: 0;
+}
+
+.menu-link:hover::after,
+.menu-link:focus::after {
+    opacity: 1;
+}
+
+.contacts {
+    font-style: normal;
+}
+
+.contacts-list {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+}
+
+.contact-link {
+    color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: color 0.4s ease;
+}
+
+.contact-link:hover, .contact-link:focus {
+    color: #404BBF;
+}
+
+/* ================ /HEADER SECTION ================ */
+
+
+/* ================ HERO SECTION ================ */
+
+.hero {
+    background-color: #2E2F42;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),url("../images/hero-bg-img.jpeg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding-bottom: 188px;
+    padding-top: 188px;
+}
+
+
+.main-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07em;
+    letter-spacing: 1.12px;
+    color: #FFFFFF;
+    max-width: 496px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+}
+
+.order-service-btn {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    display: block;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: none;
+    min-width: 169px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.4s ease;
+}
+
+.order-service-btn:hover, .order-service-btn:focus { 
+    background-color: #404BBF;
+}
+
+/* ================ /HERO SECTION ================ */
+
+/* ================ FEATURES SECTION ================ */
+
+
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
+.features-list-item {
+    width: calc((100% - 3 * 24px) / 4);
+}
+
+.features-list-item-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    background-color:  #F4F4FD;
+    padding: 24px 0;
+}
+
+.features-list-item-title {
+    text-align: left;
+    margin: 8px 0;
+}
+
+.features-list-item-text {
+    text-align: left;
+}
+
+/* ================ /FEATURES SECTION ================ */
+
+
+/* ================ TEAM SECTION ================ */
+
+.team {
+    background-color: #F4F4FD;
+}
+
+.team-title {
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.team-list-item {
+    background-color: #FFFFFF;
+    width: calc((100% - 3 * 24px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-list .list-item-wrapper {
+    padding: 32px 0;
+}
+
+.team-list-title {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.team-list-text {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.team-member-social-links-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.team-member-social-link-item {
+    display: flex;
+}
+
+.team-member-social-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.4s ease;
+}
+
+.team-member-social-link:hover {
+    background-color: #404BBF;
+}
+
+
+/* ================ /TEAM SECTION ================ */
+
+
+/* ================ PORTFOLIO SECTION ================ */
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-list .list-item-wrapper {
+    border: 1px solid #E7E9FC;
+    border-top: none;
+    padding: 32px 16px;
+}
+
+.portfolio-list-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-title {
+    margin-bottom: 72px;
+}
+
+.portfolio-list-item-hover-text {
+    width: 360px;
+    height: 300px;
+    position: absolute;
+    padding: 40px 32px;
+    top: -300px;
+    left: 0;
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+    overflow: hidden;
+    transition: top 0.4s ease, box-shadow 0.4s ease;
+}
+
+.portfolio-list-item:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    cursor: pointer;
+}
+
+.portfolio-list-item:hover .portfolio-list-item-hover-text {
+    top: 0;
+}
+
+.portfolio-list-item-title {
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.portfolio-list-item-text {
+    text-align: left;
+}
+
+/* ================ /PORTFOLIO SECTION ================ */
+
+/* ================ PAGE FOOTER SECTION ================ */
+
+.page-footer {
+    background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-sections-list {
+    display: flex;
+    gap: 120px;
+}
+
+.footer-logotype {
+    color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
+
+}
+
+.footer-logotype .accent-color {
+    color: #f4f4fd;
+}
+
+.page-footer-text {
+    color: #F4F4FD;
+    width: 264px;
+}
+
+.footer-social-list {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-social-list-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.footer-social-list-item-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.4s ease;
+}
+
+.footer-social-list-item-link:hover {
+    background-color: #404BBF;
+}
+
+/* ================ /PAGE FOOTER SECTION ================ */
