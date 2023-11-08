@@ -423,9 +423,13 @@ p {
     padding-bottom: 100px;
 }
 
-.footer-sections-list {
+.footer-container {
     display: flex;
-    gap: 120px;
+    align-items: baseline;
+}
+
+.logo-section {
+    margin-right: 120px;
 }
 
 .footer-logotype {
