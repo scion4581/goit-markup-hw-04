@@ -359,12 +359,6 @@ p {
     row-gap: 48px;
 }
 
-/* .portfolio-list .list-item-wrapper {
-    border: 1px solid #E7E9FC;
-    border-top: none;
-    padding: 32px 16px;
-} */
-
 .portfolio-list-item {
     position: relative;
     overflow: hidden;
@@ -471,11 +465,15 @@ p {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.4s ease;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-list-item-link:hover {
-    background-color: #404BBF;
+.footer-social-list-item-link:hover, .footer-social-list-item-link:focus {
+    background-color: #31d0aa;
+}
+
+.footer-social-icon {
+    fill: #f4f4fd;
 }
 
 /* ================ /PAGE FOOTER SECTION ================ */
